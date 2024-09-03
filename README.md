@@ -10,4 +10,5 @@
 - IBM Cloudant
 
 ## Features
-<img src="demo.png">
+![demo](https://github.com/user-attachments/assets/88e4a152-d773-4f11-8741-05f24d40fab8)
+<!--img src="demo.png">
