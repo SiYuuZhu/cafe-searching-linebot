@@ -24,8 +24,8 @@ import random
 
 app = Flask(__name__)
 
-CHANNEL_SECRET = 'ed619caf098732c09a0c9bc4d067a0dc'
-ACCESS_TOKEN = 'gmeAjvDXirVwzHqrhhN7igo3nasLcTfnRZBhPI+mImisToBEt+0FBNbIJY7HVvkvqsCBBAzDu5mqMRe9w8G6FvMEA2hHLxpe3InShv2lgd1cc0+HAWzFN2WmW1lnOFfVvYNpv7uGoa+o+YClKooiEgdB04t89/1O/w1cDnyilFU='
+CHANNEL_SECRET = ''
+ACCESS_TOKEN = ''
 
 line_bot_api = LineBotApi(ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
