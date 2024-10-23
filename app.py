@@ -56,7 +56,7 @@ def drawrrecommend(species):
 
 
 def find_coffeeshop(search_key):
-    gmaps = googlemaps.Client(key="AIzaSyBJYD86YyALAJHvaTKIhyof_L1IfmycBSA")
+    gmaps = googlemaps.Client(key="")
     location = (25.013374954867782, 121.5405596723314)
     radius = 5000
     lists = []
@@ -104,8 +104,8 @@ def get_access_token():
     # parameter
     data = {
         "grant_type": "client_credentials",
-        "client_id": "ee952f815b681f5a53c9e8b83131a0d8",
-        "client_secret": "c5f1557091af6c9243f84d105bddc853"
+        "client_id": "",
+        "client_secret": ""
     }
     access_token = requests.post(url, headers=headers, data=data)
     return access_token.json()["access_token"]
@@ -241,8 +241,8 @@ global picturedb,coffeedb
 
 if __name__ == "__main__":
     httpAdapter = HTTPAdapter(pool_connections=15, pool_maxsize=100)
-    ACCOUNT_NAME = "2fcdf5e3-efe2-4275-a37e-b9e4e2fcea20-bluemix"
-    API_KEY = "z1_XduHEdf8rm8_TYnwql_TgErsMEcY0J2RlQbiBW1Xg"
+    ACCOUNT_NAME = ""
+    API_KEY = ""
 
     client = Cloudant.iam(ACCOUNT_NAME, API_KEY, connect=True,
                           adapter=Replay429Adapter(retries=10, initialBackoff=0.01))
